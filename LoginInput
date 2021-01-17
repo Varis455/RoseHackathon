@@ -1,0 +1,19 @@
+const loginForm = document.getElementById('login-form');
+const loginButton = document.getElementById('login-form-sumbit');
+const loginErrorMessage = document.getElementById("login-error-message");
+
+loginButton.addEventListener('click', (e) => {
+e.preventDefault();
+const userEmail = loginForum.userEmail.value;
+const userPassword = loginForm.userPassword.value;
+
+if(userEmail === 'user' && userPassword === 'web_dev') {
+alert("Welcome " + userEmail);
+location.reload();
+}
+else {
+alert("Incorrect username or password. Please Try Again");
+location.reload();
+}
+
+})
